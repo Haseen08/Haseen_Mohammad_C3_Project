@@ -20,8 +20,6 @@ public class ItemTest {
 
     @Test
     public void adding_item_to_order_should_increase_order_size_by_1(){
-
-        //  System.out.println(item.getOrder().size());
         int initialOrderSize = item.getOrder().size();
         item.addToOrder("Sizzling brownie",319);
         assertEquals(initialOrderSize+1,item.getOrder().size());
